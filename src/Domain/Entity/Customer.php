@@ -7,26 +7,26 @@ class Customers extends AbstractEntity
     protected $name;
     protected $email;
 
-    pubic function getName()
+    public function getName()
     {
         return $this->name;
     }
 
-    pubic function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
 
         return $this;
     }
 
-    pubic function setEmail($email)
+    public function setEmail($email)
     {
         $this->email = $email;
 
         return $this;
     }
 
-    pubic function getEmail()
+    public function getEmail()
     {
         return $this->email;
     }
