@@ -5,7 +5,7 @@ namespace CleanPhp\Invoicer\Persistence\Zend\TableGateway;
 use Zend\Db\Adapter\Adapter;
 use Zend\Db\ResultSet\HydratingResultSet;
 use Zend\Db\TableGateway\TableGateway;
-use Zend\StdLib\Hydratory\HydratorInterface;
+use Zend\Stdlib\Hydrator\HydratorInterface;
 
 class TableGatewayFactory
 {

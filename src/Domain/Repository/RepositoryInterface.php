@@ -2,6 +2,8 @@
 
 namespace CleanPhp\Invoicer\Domain\Repository;
 
+use CleanPhp\Invoicer\Domain\Entity\AbstractEntity;
+
 interface RepositoryInterface
 {
 	/**

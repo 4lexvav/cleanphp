@@ -7,13 +7,14 @@ use CleanPhp\Invoicer\Persistence\Zend\DataTable\CustomerTable;
 use CleanPhp\Invoicer\Persistence\Zend\DataTable\OrderTable;
 use CleanPhp\Invoicer\Persistence\Zend\DataTable\InvoiceTable;
 use CleanPhp\Invoicer\Persistence\Zend\TableGateway\TableGatewayFactory;
-use Zend\StdLib\Hydrator\ClassMethods;
+use Zend\Stdlib\Hydrator\ClassMethods;
 
 return [
     'service_manager' => [
         'factories' => [
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
             'CustomerTable' => function($sm) {
-                $factory = new TableGatewayFactyory();
+                $factory = new TableGatewayFactory();
                 $hydrator = new ClassMethods();
 
                 return new CustomerTable(
@@ -27,7 +28,7 @@ return [
                 );
             },
             'OrderTable' => function($sm) {
-                $factory = new TableGatewayFactyory();
+                $factory = new TableGatewayFactory();
                 $hydrator = new ClassMethods();
 
                 return new OrderTable(
@@ -41,7 +42,7 @@ return [
                 );
             },
             'InvoiceTable' => function($sm) {
-                $factory = new TableGatewayFactyory();
+                $factory = new TableGatewayFactory();
                 $hydrator = new ClassMethods();
 
                 return new InvoiceTable(
@@ -54,7 +55,7 @@ return [
                     $hydrator
                 );
             },
-            'Zebd\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
         ],
     ],
 ];
+

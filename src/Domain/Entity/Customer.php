@@ -2,7 +2,7 @@
 
 namespace CleanPhp\Invoicer\Domain\Entity;
 
-class Customers extends AbstractEntity
+class Customer extends AbstractEntity
 {
     protected $name;
     protected $email;

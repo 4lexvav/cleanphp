@@ -16,6 +16,8 @@ class CustomersController extends AbstractActionController
 
     public function indexAction()
     {
+        /*phpinfo();
+        die();*/
         return [
             'customers' => $this->customerRepository->getAll()
         ];

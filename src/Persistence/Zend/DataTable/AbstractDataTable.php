@@ -5,7 +5,7 @@ namespace CleanPhp\Invoicer\Persistence\Zend\DataTable;
 use CleanPhp\Invoicer\Domain\Repository\RepositoryInterface;
 use CleanPhp\Invoicer\Domain\Entity\AbstractEntity;
 use Zend\Db\TableGateway\TableGateway;
-use Zend\StdLib\Hydrator\HydratorInterface;
+use Zend\Stdlib\Hydrator\HydratorInterface;
 
 abstract class AbstractDataTable implements RepositoryInterface
 {

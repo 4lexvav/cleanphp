@@ -4,6 +4,10 @@
 <?php if (isset($this->reason) && $this->reason): ?>
 
 <?php
+/*echo '<pre>';
+print_r(get_class($this));
+print_r(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS));*/
+//die();
 $reasonMessage= '';
 switch ($this->reason) {
     case 'error-controller-cannot-dispatch':
