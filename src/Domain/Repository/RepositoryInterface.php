@@ -9,6 +9,8 @@ interface RepositoryInterface
 	/**
 	 * Retrieve entity by its ID
 	 *
+	 * @param int $id
+	 *
 	 * @return AbstractEntity
 	 */
 	public function getById($id);
@@ -21,7 +23,7 @@ interface RepositoryInterface
 	/**
 	 * Save entity
 	 *
-	 * @param AbstractEntity
+	 * @param AbstractEntity $entity
 	 */
 	public function persist(AbstractEntity $entity);
 
